@@ -1,0 +1,31 @@
+! st terminal
+st.font: MxPlus IBM VGA 8x16:pixelsize=16:antialias=false:autohint=false
+st.termname: st-256color
+st.borderpx: 10
+st.foreground: #3a323d
+st.background: #f2f3f5
+
+! shitty colors!!!! yey!!!
+st.color0: #3a323d
+st.color1: #9b6f55
+st.color2: #6d8a93
+st.color3: #697289
+st.color4: #2e4e6c
+st.color5: #2a6a72
+st.color6: #407f61
+st.color7: #acb6c2
+st.color8: #666666
+st.color9: #cc9270
+st.color10: #82a5b0
+st.color11: #8893b0
+st.color12: #406a95
+st.color13: #388e98
+st.color14: #52a27c
+st.color15: #c7d3e1
+
+! dmenu
+dmenu.font: MxPlus IBM VGA 8x16:size=12
+dmenu.normfgcolor: #3a323d
+dmenu.normbgcolor: #f2f3f5
+dmenu.selfgcolor: #f2f3f5
+dmenu.selbgcolor: #56667d

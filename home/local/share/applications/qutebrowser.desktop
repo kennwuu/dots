@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Internet;
+Comment[en_US]=lightweight keyboard-driven web browser
+Comment=lightweight keyboard-driven web browser
+Encoding=UTF-8
+Exec=qutebrowser
+GenericName[en_US]=Browser
+GenericName=Browser
+Icon=qutebrowser
+Name[en_US]=qutebrowser
+Name=qutebrowser
+Path=
+Terminal=false
+Type=Application
+

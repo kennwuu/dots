@@ -1,0 +1,20 @@
+
+# history
+export HISTFILE="$HOME/.cache/ash_hist"
+export HISTSIZE=500
+
+# prompt
+export PS1="$(hostname) % "
+
+# aliases
+alias la='ls -la'
+alias src='cd $HOME/src && echo you are in $(pwd)'
+alias confs='cd $HOME/.config && echo you are in $(pwd)'
+alias code='cd $HOME/code && echo you are in $(pwd)'
+alias keybinds='$EDITOR $HOME/.config/sxhkd/sxhkdrc'
+alias ss='scrot -p $HOME/ss/%Y-%m-%a-%H:%M:%S.png'
+alias sys='vfetch -d 9'
+alias vise=vis
+
+# misc
+fortune

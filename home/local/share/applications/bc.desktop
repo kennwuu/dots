@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment[en_US]=calculator
+Comment=calculator
+Encoding=UTF-8
+Exec=st -t calc -g =80x28 -e bc;
+GenericName[en_US]=Calculator
+GenericName=Calculator
+Name[en_US]=calc
+Name=calc
+Path=
+Terminal=true
+Type=Application
+

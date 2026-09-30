@@ -1,0 +1,7 @@
+# ...
+# misc
+screen.font="12x22"
+teken.fg_color=6
+teken.bg_color=0
+loaderlogo="beastiebw"
+loader_gfx="NO"

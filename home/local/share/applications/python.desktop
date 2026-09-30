@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment[en_US]=launch a python shell
+Comment=launch a python shell
+Encoding=UTF-8
+Exec=st -g =80x28 -e python;
+GenericName[en_US]=Python
+GenericName=Python
+Icon=st
+Keywords=shell;prompt;command;commandline;cmd;
+Name[en_US]=python
+Name=python
+Path=
+Type=Application
+

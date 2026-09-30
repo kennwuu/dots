@@ -1,0 +1,68 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+alt + Return
+	st -g =80x28
+
+# program launcher
+alt + space
+	dmenu_dprint -z 350 -p 'launch '
+
+# make sxhkd reload its configuration files:
+alt + r
+	pkill -USR1 -x sxhkd
+
+# quit berry
+alt + control + Escape
+	berryc quit
+
+# screenshot
+alt + control + s
+	scrot -p $HOME/ss/%Y-%m-%a-%H:%M:%S.png
+
+# brightness bullshit
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
+	brightnessctl s {+200,200-}
+
+# sound bullshit. change 'PGA1.0 1 Master' to your actual master device
+{XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume}
+	amixer sset 'PGA1.0 1 Master' {0%,5%-,5%+}
+
+#
+# berry hotkeys
+#
+
+alt + {h, j, k, l}
+    berryc window_move {-16 0, 0 16, 0 -16, 16 0}
+
+alt + shift + {h, j, k, l}
+    berryc window_resize {-16 0, 0 16, 0 -16, 16 0}
+
+alt + {1-9}
+    berryc switch_workspace {0-9}
+
+alt + shift + {1-9}
+    berryc send_to_workspace {0-9}
+
+alt + f
+    berryc window_monocle
+
+alt + shift + f
+    berryc fullscreen
+
+alt + n
+    berryc toggle_decorations
+
+alt + Tab
+    berryc cycle_focus
+
+alt + q
+    berryc window_close
+
+alt + c
+    berryc window_center
+
+~button1
+    berryc pointer_focus

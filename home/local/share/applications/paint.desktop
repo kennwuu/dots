@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Graphics
+Comment[en_US]=plan 9 paint
+Comment=plan 9 paint
+Encoding=UTF-8
+Exec=9 paint
+GenericName[en_US]=Paint
+GenericName=Paint
+Name[en_US]=paint
+Name=paint
+Path=
+Terminal=false
+Type=Application
+

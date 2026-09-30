@@ -1,0 +1,8 @@
+export PLAN9=/usr/lib/plan9
+export PATH=$PATH:$PLAN9/bin:$HOME/.local/bin
+export ENV=$HOME/.config/sh/shrc
+. $ENV
+
+# misc
+export NAMESPACE="/tmp/ns.$USER.$DISPLAY"
+mkdir -p -m 700 "$NAMESPACE" 2>/dev/null

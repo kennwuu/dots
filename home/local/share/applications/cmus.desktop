@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=MusicPlayer;
+Comment[en_US]=simple music player
+Comment=simple music player
+Encoding=UTF-8
+Exec=st -g =80x28 -e cmus;
+GenericName[en_US]=cmus
+GenericName=cmus
+Icon=cmus
+Keywords=shell;prompt;command;commandline;cmd;
+Name[en_US]=music
+Name=music
+Path=
+Terminal=true
+Type=Application
+

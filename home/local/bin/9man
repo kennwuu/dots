@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# kennw: a smol script for reading plan9 manpages on your regular terminal
+#        I like to cp this to $HOME/.local/bin
+
+if [ $# -eq 0 ]; then
+
+   echo "whacha wanna read?"
+   exit 1
+
+fi
+
+9 man "$1" | less

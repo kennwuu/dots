@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment[en_US]=plan 9 acme
+Comment=plan 9 paint
+Encoding=UTF-8
+Exec=9 acme
+GenericName[en_US]=acme
+GenericName=acme
+Name[en_US]=paint
+Name=acme
+Path=
+Terminal=false
+Type=Application
+

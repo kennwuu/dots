@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=System;TerminalEmulator;
+Comment[en_US]=simple terminal emulator for the X window system
+Comment=simple terminal emulator for the X window system
+Encoding=UTF-8
+Exec=st -g =80x28;
+GenericName[en_US]=Terminal
+GenericName=Terminal
+Icon=st
+Keywords=shell;prompt;command;commandline;cmd;
+Name[en_US]=terminal
+Name=terminal
+Path=
+Terminal=false
+Type=Application
+
