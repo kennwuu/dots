@@ -1,8 +1,11 @@
 #!/bin/sh
 
-xwallpaper --zoom $HOME/ww/ocean_paint.png &
+# uncomment the stuff you want to use
+
+#xwallpaper --zoom $HOME/wlp/something.png &
 xrdb $HOME/.Xresources
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+#sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 picom --backend xrender --vsync &
-. $HOME/sh/bar.sh &
-exec berry
+#. $HOME/sh/bar.sh &
+#exec berry
+#exec sdorfehs

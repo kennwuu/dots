@@ -1,0 +1,58 @@
+set border 5
+set startupmessage 0
+set barsticky 1
+set bgcolor #ffffff
+set fgcolor #000000
+set font "Spleen 8x16:size=12:antialias=false"
+set padding 18 18 18 18
+set bwcolor grey
+set fwcolor black
+
+bind Escape abort
+bind BackSpace abort
+bind C-BackSpace quit
+bind s hsplit
+bind C-s hsplit
+bind S split
+bind C-S split
+
+bind c exec st
+bind C-c exec st
+bind C-exclam colon exec st -e
+
+# i dont have function keys
+bind 1 vselect 0
+bind 2 vselect 1
+bind 3 vselect 2
+bind 4 vselect 3
+bind 5 vselect 4
+bind 6 vselect 5
+bind 7 vselect 6
+bind 8 vselect 7
+bind 9 vselect 8
+bind 0 vselect 9
+bind minus vselect 10
+bind equal vselect 11
+
+# unbind stuff
+unbind F1
+unbind F2
+unbind F3
+unbind F4
+unbind F5
+unbind F6
+unbind F7
+unbind F8
+unbind F9
+unbind F10
+unbind F11
+unbind F12
+unbind C-g
+
+# what?
+unmanage xclock
+
+# startup stuff
+exec sh -c ". $HOME/sh/sdorfbar.sh &"
+hsplit
+fselect 0

@@ -1,27 +1,53 @@
-! st terminal
-st.font: MxPlus IBM VGA 8x16:pixelsize=16:antialias=false:autohint=false
-st.termname: st-256color
-st.borderpx: 10
-st.foreground: #3a323d
-st.background: #f2f3f5
+! messy xresources by kennw
+! uncomment the stuff you want to enable/use
 
-! shitty colors!!!! yey!!!
-st.color0: #3a323d
-st.color1: #9b6f55
-st.color2: #6d8a93
-st.color3: #697289
-st.color4: #2e4e6c
-st.color5: #2a6a72
-st.color6: #407f61
-st.color7: #acb6c2
-st.color8: #666666
-st.color9: #cc9270
-st.color10: #82a5b0
-st.color11: #8893b0
-st.color12: #406a95
-st.color13: #388e98
-st.color14: #52a27c
-st.color15: #c7d3e1
+! st-bonk terminal
+!st.font: MxPlus IBM VGA 8x16:pixelsize=16
+!st.font: Spleen 8x16:pixelsize=16
+st.borderpx: 10
+
+! toggle your colors (st)
+! fg bg
+!st.foreground: #3a323d
+!st.background: #f2f3f5
+!st.foreground: #000000
+!st.background: #ffffff
+
+! stormy seas
+!st.color0: #3a323d
+!st.color1: #9b6f55
+!st.color2: #6d8a93
+!st.color3: #697289
+!st.color4: #2e4e6c
+!st.color5: #2a6a72
+!st.color6: #407f61
+!st.color7: #acb6c2
+!st.color8: #666666
+!st.color9: #cc9270
+!st.color10: #82a5b0
+!st.color11: #8893b0
+!st.color12: #406a95
+!st.color13: #388e98
+!st.color14: #52a27c
+!st.color15: #c7d3e1
+
+! le orange
+!st.color0: #000000
+!st.color1: #c93a23
+!st.color2: #c76827
+!st.color3: #c28d24
+!st.color4: #a04920
+!st.color5: #b21049
+!st.color6: #ae4b1f
+!st.color7: #dadada
+!st.color8: #666666
+!st.color9: #e44429
+!st.color10: #e0752c
+!st.color11: #dba027
+!st.color12: #c35a26
+!st.color13: #c5124f
+!st.color14: #c45422
+!st.color15: #ffffff
 
 ! dmenu
 dmenu.font: MxPlus IBM VGA 8x16:size=12
