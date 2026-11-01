@@ -1,0 +1,25 @@
+# Vertical gradient
+border.width: 1
+*.border.width: 1
+window.active.title.bg: Solid
+*.border.color: #000000
+*.separator.color: #d23a56
+window.active.title.bg.color: #d23a56
+window.inactive.title.bg.color: #9268cf
+osd.bg.color: #ffffff
+osd.border.color: #000000
+osd.label.text.color: #000000
+osd.window-switcher.style-classic.width: 250
+osd.window-switcher.style-classic.item.active.border.width: 1
+osd.window-switcher.style-classic.item.active.bg.color: #ffffff
+osd.window-switcher.preview.border.width: 0
+menu.items*.bg.color: #ffffff
+menu.items.text.color: #000000
+menu.border.color: #000000
+menu.items.active.text.color: #d23a56
+window.inactive.label.text.color: #ffffff
+window.active.label.text.color: #ffffff
+window.*.button.*.image.color: #ffffff
+window.label.text.justify: Left
+window.titlebar.padding.width: 3
+window.titlebar.padding.height: 0

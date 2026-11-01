@@ -1,0 +1,4 @@
+#!/bin/sh
+
+swaybg -m fill -i $HOME/wlp/Mac\ OS\ 9,\ OSX\ and\ Mac\ OS/Heavy\ Petal\ 4.jpg &
+. $HOME/sh/wbar.sh &

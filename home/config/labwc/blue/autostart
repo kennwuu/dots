@@ -1,0 +1,4 @@
+#!/bin/sh
+
+swaybg -m fill -i $HOME/wlp/teal.png &
+. $HOME/sh/wbar.sh &

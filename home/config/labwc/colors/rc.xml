@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<labwc_config>
+
+<!-- thnk yu chld (https://srcdump.net/chld/dot) -->
+
+  <libinput>
+    <device category="non-touch">
+      <accelProfile>flat</accelProfile>
+      <pointerSpeed>0.3</pointerSpeed>
+    </device>
+    <device category="touchpad">
+      <accelProfile>flat</accelProfile>
+      <pointerSpeed>0.1</pointerSpeed>
+      <tapButtonMap>lrm</tapButtonMap>
+      <tapAndDrag>yes</tapAndDrag>
+      <disableWhileTyping>no</disableWhileTyping>
+      <scrollMethod>twofinger</scrollMethod>
+      <threeFingerScroll>4</threeFingerScroll>
+    </device>
+  </libinput>
+  <core>
+    <decoration>server</decoration>
+    <gap>0</gap>
+  </core>
+  <placement>
+    <policy>cursor</policy>
+  </placement>
+  <keyboard>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute" command="brightnessctl set +4%"/>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute" command="brightnessctl set 4-%"/>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute" command="wpctl set-volume @DEFAULT_SINK@ 5%+"/>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute" command="wpctl set-volume @DEFAULT_SINK@ 5%-"/>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute" command="wpctl set-mute @DEFAULT_SINK@ toggle"/>
+    </keybind>
+    <keybind key="A-1">
+      <action name="GoToDesktop" to="1"/>
+    </keybind>
+    <keybind key="A-2">
+      <action name="GoToDesktop" to="2"/>
+    </keybind>
+    <keybind key="A-3">
+      <action name="GoToDesktop" to="3"/>
+    </keybind>
+    <keybind key="A-4">
+      <action name="GoToDesktop" to="4"/>
+    </keybind>
+    <keybind key="A-5">
+      <action name="GoToDesktop" to="5"/>
+    </keybind>
+    <keybind key="A-6">
+      <action name="GoToDesktop" to="6"/>
+    </keybind>
+    <keybind key="A-7">
+      <action name="GoToDesktop" to="7"/>
+    </keybind>
+    <keybind key="A-8">
+      <action name="GoToDesktop" to="8"/>
+    </keybind>
+    <keybind key="A-9">
+      <action name="GoToDesktop" to="9"/>
+    </keybind>
+    <keybind key="A-0">
+      <action name="GoToDesktop" to="10"/>
+    </keybind>
+    <keybind key="A-S-1">
+      <action name="SendToDesktop" to="1"/>
+    </keybind>
+    <keybind key="A-S-2">
+      <action name="SendToDesktop" to="2"/>
+    </keybind>
+    <keybind key="A-S-3">
+      <action name="SendToDesktop" to="3"/>
+    </keybind>
+    <keybind key="A-S-4">
+      <action name="SendToDesktop" to="4"/>
+    </keybind>
+    <keybind key="A-S-5">
+      <action name="SendToDesktop" to="5"/>
+    </keybind>
+    <keybind key="A-S-6">
+      <action name="SendToDesktop" to="6"/>
+    </keybind>
+    <keybind key="A-S-7">
+      <action name="SendToDesktop" to="7"/>
+    </keybind>
+    <keybind key="A-S-8">
+      <action name="SendToDesktop" to="8"/>
+    </keybind>
+    <keybind key="A-S-9">
+      <action name="SendToDesktop" to="9"/>
+    </keybind>
+    <keybind key="A-S-0">
+      <action name="SendToDesktop" to="10"/>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="A-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-d">
+      <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="A-f">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="A-S-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="A-Return">
+      <action name="Execute" command="foot"/>
+    </keybind>
+    <keybind key="C-S-Escape">
+      <action name="Exit"/>
+    </keybind>
+    <repeatRate>50</repeatRate>
+    <repeatDelay>600</repeatDelay>
+  </keyboard>
+  <mouse>
+    <default/>
+    <context name="Frame">
+      <mousebind button="A-Right" action="Drag">
+        <action name="Focus" />
+        <action name="Raise"/>
+        <action name="Resize"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Drag">
+        <action name="Focus" />
+        <action name="Raise"/>
+        <action name="Move" />
+      </mousebind>
+      <mousebind button="A-Right" action="Click">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Click">
+        <action name="Focus" />
+        <action name="Raise"/>
+      </mousebind>
+    </context>
+    <context name="Root">
+      <mousebind direction="Up" action="Scroll">
+        <!-- do nothing -->
+      </mousebind>
+      <mousebind direction="Down" action="Scroll">
+        <!-- do nothing -->
+      </mousebind>
+    </context>
+    <!-- <context name="All">
+      <mousebind direction="Right" action="Scroll">
+        <action name="GoToDesktop" to="right"/>
+      </mousebind>
+      <mousebind direction="Left" action="Scroll">
+        <action name="GoToDesktop" to="left"/>
+      </mousebind>
+    </context> -->
+  </mouse>
+  <theme>
+    <name>wc</name>
+    <cornerRadius>7</cornerRadius>
+    <keepBorder>no</keepBorder>
+    <dropShadows>no</dropShadows>
+    <font place="ActiveWindow">
+      <name>Mx437 NEC APC3 8x16</name>
+      <size>12</size>
+    </font>
+    <font place="InactiveWindow">
+      <name>Mx437 NEC APC3 8x16</name>
+      <size>12</size>
+    </font>
+    <font place="MenuHeader">
+      <name>Mx437 NEC APC3 8x16</name>
+      <size>12</size>
+    </font>
+    <font place="MenuItem">
+      <name>Mx437 NEC APC3 8x16</name>
+      <size>12</size>
+    </font>
+    <font place="OnScreenDisplay">
+      <name>Mx437 NEC APC3 8x16</name>
+      <size>12</size>
+    </font>
+    <titlebar>
+      <layout>:</layout>
+    </titlebar>
+  </theme>
+  <menu>
+    <ignoreButtonReleasePeriod>250</ignoreButtonReleasePeriod>
+    <showIcons>no</showIcons>
+  </menu>
+  <desktops number="10"/>
+  <windowSwitcher preview="yes" outlines="yes">
+    <osd show="yes" style="classic"/>
+    <fields>
+      <field content="title" width="100%"/>
+    </fields>
+  </windowSwitcher>
+  <margin top="0" bottom="0" left="0" right="0"/>
+  <resize>
+    <drawContents>no</drawContents>
+  </resize>
+  <snapping>
+    <cornerRange>0</cornerRange>
+    <overlay>
+      <enabled>no</enabled>
+    </overlay>
+  </snapping>
+  <resistance>
+    <screenEdgeStrength>0</screenEdgeStrength>
+    <windowEdgeStrength>0</windowEdgeStrength>
+  </resistance>
+</labwc_config>

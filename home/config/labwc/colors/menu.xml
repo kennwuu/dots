@@ -1,0 +1,91 @@
+<openbox_menu>
+<!-- Note: for localization support of menu items "client-menu" has to be removed here -->
+<menu id="client-menu">
+  <!--
+  <item label="mini">
+    <action name="Iconify" />
+  </item>
+  -->
+  <item label="pin">
+    <action name="ToggleAlwaysOnTop" />
+  </item>
+  <item label="roll">
+    <action name="ToggleShade" />
+  </item>
+  <item label="decor">
+    <action name="ToggleDecorations" />
+  </item>
+  <item label="max">
+    <action name="ToggleMaximize" />
+  </item>
+  <item label="full">
+    <action name="ToggleFullscreen" />
+  </item>
+  <!--
+    Any menu with the id "workspaces" will be hidden
+    if there is only a single workspace available.
+  -->
+  <menu id="client-send-to-menu" />
+  <!--
+    openbox default workspace selector
+    to use replace above workspace menu with the example below
+    the label is required, but you can change the text.
+
+    <menu id="client-send-to-menu" label="Send to..." />
+  -->
+  <item label="close">
+    <action name="Close" />
+  </item>
+</menu>
+
+<menu id="root-menu">
+  <!-- Make client-list-combined-menu a submenu of root-menu
+       You must supply a label or it will not appear in root-menu -->
+  <!--
+  <menu id="client-list-combined-menu" label="Running..." />
+  -->
+  <item label="terminal">
+    <action name="Execute" command="foot" />
+  </item>
+  <item label="senpai">
+    <action name="Execute" command="foot -e senpai" />
+  </item>
+  <item label="browser">
+    <action name="Execute" command="chromium" />
+  </item>
+  <item label="minecraft">
+    <!-- please forgive me -->
+    <action name="Execute" command="flatpak run org.prismlauncher.PrismLauncher" />
+  </item>
+  <separator />
+  <item label="refresh">
+    <action name="Reconfigure" />
+  </item>
+  <item label="capture">
+    <action name="Execute" command="grim -c " />
+  </item>
+  <item label="quit">
+    <action name="Exit" />
+  </item>
+  <!--
+  # A prompt can be used as follows:
+  <item label="Exit">
+    <action name="If">
+      <prompt message="Exit?" />
+      <then>
+        <action name="Exit" />
+      </then>
+    </action>
+  </item>
+  -->
+</menu>
+
+<menu id="some-custom-menu">
+  <!--
+    Creates menu title.
+    To create an empty header with no text,
+    set label=" ", not label=""
+  -->
+</menu>
+
+</openbox_menu>
